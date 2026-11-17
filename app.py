@@ -8,7 +8,7 @@ from src.validation import quality
 
 st.set_page_config(page_title='Motor Insurance | Portfolio Analytics',page_icon='🚘',layout='wide',initial_sidebar_state='expanded')
 apply()
-source=Path(__file__).parent/'data'/'motor_dashboard.csv'
+source=Path(__file__).parent/'data'/'motor_dashboard_checked.csv'
 if source.exists():raw=read_csv(source)
 else:
     st.warning('data/motor_dashboard.csv not found. Upload your own CSV to use the dashboard. No insurance sample figures are fabricated.')
